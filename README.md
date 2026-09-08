@@ -1,3 +1,5 @@
+#### demo repo for [this](https://github.com/micronaut-projects/micronaut-serialization/issues/1411) micronaut-serialization issue
+
 ## Micronaut 5.1.3 Documentation
 
 - [User Guide](https://docs.micronaut.io/5.1.3/guide/index.html)
