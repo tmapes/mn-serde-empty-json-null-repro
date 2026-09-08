@@ -20,10 +20,13 @@ class DataObjectsTest {
         val outputJson = objectMapper.writeValueAsString(input)
 
         Assertions.assertEquals(expectedOutput, outputJson)
+
+        val parsedInput = objectMapper.readValue(outputJson, UserInfo::class.java)
+        Assertions.assertEquals(input, parsedInput)
     }
 
     @Test
-    fun testSerde() {
+    fun testSerde_UserInfo_Nested() {
         val input = OuterClazz(
             name = "my_name",
             userInfo = UserInfo(null, null)
